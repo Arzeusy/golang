@@ -1,25 +1,25 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+	"strconv"
+)
 
 func main() {
-	// condicion for
-	for i := 0; i <= 10; i++ {
-		fmt.Println(i)
+	valor1 := 1
+
+	if valor1 == 1 {
+		fmt.Println("es 1")
+	} else {
+		fmt.Println("no es 1")
 	}
 
-	// for while
-	counter := 0
-	for counter < 10 {
-		fmt.Println(counter)
-		counter++
-	}
+	value, err := strconv.Atoi("asd")
 
-	// for forever
-	counterForever := 0
-	for {
-		fmt.Println(counterForever)
-		counterForever++
+	if err != nil {
+		log.Fatal(err)
 	}
-	// en go solo existe un tipo de ciclo y depende de las condiciones
+	fmt.Println(value)
+
 }
