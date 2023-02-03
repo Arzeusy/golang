@@ -4,24 +4,19 @@ import "fmt"
 
 func main() {
 
-	const pi float64 = 3.14
-	const pi2 = 3.14
+	hellomessage := "hello"
+	worldMessage := "world"
 
-	fmt.Println(pi, pi2)
+	fmt.Println(hellomessage, worldMessage)
+	fmt.Println(hellomessage, worldMessage)
 
-	//declaracion de variables enteras
-	//
+	// %s para formatos string
+	// %d para formatos numericos
+	// %v para formatos dynamicos
+	fmt.Printf("%s tine mas de %v curso\n", hellomessage, worldMessage)
 
-	base := 12
-	var altura int = 12
-	var area int
+	message := fmt.Sprintf("%s tine mas de %v curso", hellomessage, worldMessage)
 
-	fmt.Println(base, altura, area)
-
-	// zero values
-	var b float64
-	var c string
-	var d bool
-
-	fmt.Println(b, c, d)
+	fmt.Println(message)
+	fmt.Printf("hellomessage: %T\n", hellomessage)
 }
