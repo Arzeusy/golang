@@ -29,4 +29,7 @@ func main() {
 	// por ejemplo value1, _ := returnNValue(2)
 	value1, vlaue2 := returnNValue(2)
 	fmt.Println("value1: ", value1, " value2: ", vlaue2)
+
+	//go doc -- librerias de terceros
+	//libreria cobra para crear comandos de consola
 }
